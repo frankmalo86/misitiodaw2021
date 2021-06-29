@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <LINK REL="stylesheet" TYPE="text/css" HREF="css/estilo1.css" />
+        <LINK REL="stylesheet" TYPE="text/css" HREF="css/table.css" />
+        <meta charset="UTF-8">
+        <title>Página de prueba</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="http://www.google.com" target="_blank">Google</a></li>
+                <li><a href="http://www.gmail.com">Gmail</a></li>
+                <li>
+                    <a href="http://www.espol.edu.ec" target="_blank">Espol</a>
+                </li>
+                <li>
+                    <a href="http://www.vinculos.espol.edu.ec" target="_blank">Vinculos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <hgroup>
+                <div class="contenido_centrado">
+                    <h1>Esto es una cabecera</h1>
+                </div>
+                <h2>Esto es otro título</h2>
+            </hgroup>
+            <hgroup>
+                <div class="contenido_centrado">
+                    <h1>Esto es otra cabecera</h1>
+                </div>
+                <h2 >Esto es otro título</h2>
+                <h3>esto es otro título de jerarquia 3</h3>
+            </hgroup>
+        </header>
+        <strong>test</strong>
+        <section >
+            <div class="efecto" >Parrafo de prueba, <b>palabra</b> tildada oración</div>
+            <p id="segundo_parrafo" class="contenido_lectura" >El conflicto <strong>israelí-palestino</strong> (en hebreo: Ha'Sikhsukh Ha'yisraeli-Falestini; en árabe: النزاع الفلسطيني - الإسرائيلي, al-Niza'a al'Filastini al 'Israili) es el conflicto social y armado en curso entre israelíes y palestinos que se remonta a principios del siglo XX.3​ En respuesta al creciente antisemitismo contra los judíos que se vivía en Europa, a finales del siglo XIX surgió un </p>
+            <div id ="div_prueba" class="css_animation">
+              movimiento sionista que defendía el establecimiento de los judíos en Israel. Muchos judíos emigraron a Palestina después de la Primera Guerra Mundial pero, al término de la Segunda Guerra Mundial y como consecuencia de la conmoción causada por el Holocausto, se aprobó la partición de lo que había sido el mandato británico en Palestina en dos: la parte judía y la parte árabe. El Estado judío supondría un 55% del territorio del Mandato, incluido el desierto del Néguev, y su población estaría formada por 500 000 judíos y 400 000 árabes palestinos. En ese momento, los judíos solo poseían el 7% de las tierras de Palestina. El Estado árabe palestino tendría el 44% del territorio del Mandato y una población de 725 000 árabes palestinos con una minoría de unos 10 000 judíos.4​ Los judíos aceptaron el plan mientras que los árabes lo rechazaron. Estalló entonces una guerra civil en el mandato entre judíos y palestinos que desencadenó la expulsión o huida de dos tercios de la población palestina. El 14 de mayo de 1948, coincidiendo con la declaración de independencia de Israel, los Estados árabes vecinos declararon la guerra al recién creado estado de Israel, aunque finalmente fueron derrotados por los israelíes. A la conclusión de la guerra, Israel se negó a aceptar el retorno de los más de 700 000 refugiados palestinos, que han vivido desde entonces en campamentos de refugiados y ciudades de Líbano, Siria, Jordania, la Franja de Gaza y Cisjordania, entre otros lugares.
+            </div>
+            <a href="http://www.google.com"  target="_blank" >Google</a>
+        </section>
+        <section>
+
+        </section>
+
+        <table border="solid">
+            <tr>
+                <td colspan="2">uno</td>
+                <!-- <td>dos</td> esto fue comentado para demostrar como uno celdas -->
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td rowspan="2">6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <!-- <td>9</td> -->
+            </tr>
+        </table>
+
+        <video width="320" height="240" controls>
+            <source src="2021-05-10.mp4" type="video/mp4">
+        </video>
+
+        <br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/65i_zjjXA0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><br>
+
+        <!-- a donde voy a enviar la información ??  action   -->
+        <!-- que información voy a enviar ??  input[name]   -->
+        <!--cómo lo enviar ??  get (la informacion se ve en la barra de direcciones), 
+            post (viajan como cabeceras del protocolo http) -->
+
+        <form action="http://localhost:8888/test1/prueba.php" method="POST">
+            <label for="">Usuario: </label>
+            <input type="text" name="usuario" title="Ingrese el usuario: "/><br>
+            <label for="">Contraseña: </label>
+            <input type="password" name="clave" title="Ingrese la clave: "/><br>
+            <label for="">F nacimiento: </label>
+            <input id="fecha" type="text" name="fnacimiento" title="Ingrese la fecha de nacimiento: "/><br>
+            <input type="button" value="Guardar" id="btn_guardar"/>
+
+            <fieldset>
+                <legend>Sexo: </legend>
+                <label for="radio-1">Masculino</label>
+                <input type="radio" name="radio-1" id="radio-1">
+                <label for="radio-2">Femenino</label>
+                <input type="radio" name="radio-1" id="radio-2">
+                
+              </fieldset>
+        </form>
+
+        <br><br>
+        <!-- <label for="">INGRESE SU NOMBRE: </label>
+        <input type="text" id="nombre" title="Ingrese el nombre"/><br>
+        <input type="button" value="Saludar" onclick="saludo(document.getElementById('nombre').value);"> -->
+        <textarea id="opiniones" cols="30" rows="10" onkeyup="presentarcantidadletras(this.value)" onkeydown="return contarletras(this.value, event);" ></textarea>
+        <div>La cantidad de caracteres es <span id="cantidad_caracteres">0</span></div>
+        <br><br> <br><br>
+
+        <button onclick="agregarparrafo();">Presionar</button>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <SCRIPT type="text/javascript" src="js/funciones.js"></SCRIPT>
+
+        <br><br> <br><br>
+        <input type="button" value="Agregar Filas" onclick="agregar_filas('tbl_resultados');">
+        <input type="button" value="Eliminar Filas" onclick="eliminar_filas('tbl_resultados')">
+        <table class="comicGreen" id="tbl_resultados">
+            <thead>
+            <tr>
+            <th>head1</th>
+            <th>head2</th>
+            <th>head3</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+            <td>foot1</td>
+            <td>foot2</td>
+            <td>foot3</td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+            <td>cell1_1</td>
+            <td>cell2_1</td>
+            <td>cell3_1</td>
+            </tr>
+            <tr>
+            <td>cell1_2</td>
+            <td>cell2_2</td>
+            <td>cell3_2</td>
+            </tr>
+            <tr>
+            <td>cell1_3</td>
+            <td>cell2_3</td>
+            <td>cell3_3</td>
+            </tr>
+            </tbody>
+            </table>
+
+
+        <br><br> <br><br>
+
+        <button onclick="get_posts();">Consultar POST</button>
+        <br><br> <br><br>
+
+        <label for="">Título: </label>
+        <input type="text" id="titulo"/><br>
+        <label for="">Comentario: </label>
+        <textarea id="comentario" cols="30" rows="10"></textarea>
+        <button onclick="save_post();">Guardar POST</button>
+        <br><br> <br><br>
+
+        <table class="comicGreen" id="tbl_posts">
+            <thead>
+            <tr>            
+            <th>ID</th>
+            <th>TITULO</th>
+            <th>CONTENIO</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+            <br><br> <br><br>
+            <button onclick="get_articulos();">Consultar articulos</button>
+            <img id="loading" src="img/loading.gif" style="width: 50px;" >
+        <br><br> <br><br>
+            <table class="comicGreen" id="tbl_articulos">
+                <thead>
+                <tr>            
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Cuerpo</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+                <br><br> <br><br>
+
+
+            <br><br> <br><br>
+    </body>
+</html>
